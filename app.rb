@@ -8,15 +8,13 @@ set :database, {adapter: "sqlite3", database: "pizzashop.db"}
 
 
 class Product < ActiveRecord::Base
-	
 end
 
 class Client < ActiveRecord::Base
 end
 
-
-
 get '/' do
+	@products = Product.all
 	erb :index
 end
 
