@@ -8,11 +8,8 @@ function something()
   
 }
 
-function something2()
+function add_to_card()
 {
-    var v = window.localStorage.getItem('bbb');
-    v = v*1+1;
-    window.localStorage.setItem('bbb', t);
-    alert(v);
-  
+    alert('Hello from function');
 }
+
