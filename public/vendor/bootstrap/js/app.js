@@ -7,3 +7,12 @@ function something()
     alert(x);
   
 }
+
+function something2()
+{
+    var v = window.localStorage.getItem('bbb');
+    v = v*1+1;
+    window.localStorage.setItem('bbb', t);
+    alert(v);
+  
+}
