@@ -16,10 +16,10 @@
                 Price: <%= p.price %> rub
             </div>
             <div>
-                <button class="btn btn-sm btn-success" onclick="add_to_card()"> Grap </button>
+                <button class="btn btn-sm btn-success" onclick="add_to_card(<%= p.id %>)"> Grap </button>
             </div>
         </div>
-    <%end%>
+    <%end%> 
 </div>
 <br/>
 <button class="btn btn-primary" onclick="something()">Click</button>

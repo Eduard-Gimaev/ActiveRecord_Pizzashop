@@ -8,8 +8,8 @@ function something()
   
 }
 
-function add_to_card()
+function add_to_card(id)
 {
-    alert('Hello from function');
+    alert('Hello from function with id' + id);
 }
 
