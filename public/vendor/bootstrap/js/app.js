@@ -15,6 +15,7 @@ function add_to_card(id)
     var x = window.localStorage.getItem(key);
     x = x * 1 + 1;
     window.localStorage.setItem(key, x);
+    current_order()
 }
 
 function basket()  
@@ -32,6 +33,13 @@ function basket()
     return cnt;
 }
 
+function current_order()
+{
+    var order = order_in_basket();
+    $('#order_input').val(order);
+}
+
+
 function order_in_basket()  
 {
     var order = 0;
@@ -46,3 +54,4 @@ function order_in_basket()
     }
     return order;
 }
+
