@@ -15,7 +15,7 @@ function add_to_card(id)
     var x = window.localStorage.getItem(key);
     x = x * 1 + 1;
     window.localStorage.setItem(key, x);
-    current_order()
+    current_order();
 }
 
 function basket()  
