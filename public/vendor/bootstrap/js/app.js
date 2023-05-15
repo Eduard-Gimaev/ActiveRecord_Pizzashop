@@ -31,3 +31,18 @@ function basket()
     }
     return cnt;
 }
+
+function order_in_basket()  
+{
+    var order = 0;
+    for (var i = 0; i < window.localStorage.length; i++)
+    {
+        var key = window.localStorage.key(i); //get a key
+        var value = window.localStorage.getItem(key); // get a value, analog in Ruby: hh[key] = x
+        if(key.indexOf('product') == 0)
+        {
+            order = order + key + ' = ' + value*1 + ', ';
+        }
+    }
+    return order;
+}
